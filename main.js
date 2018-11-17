@@ -48,13 +48,14 @@ function updateMyArray2(value){
 function updateMyArray3(value){
     value = parseFloat(value)
     const $result = document.getElementById('result');
-    if (isNaN(value)){
-        value = Math.floor(Math.random()*20)+1
-    }
-    let valueErase = myArray[myArray.length]
-    console.log(valueErase)
-    myArray.pop();
+    // if (isNaN(value)){
+    //     value = Math.floor(Math.random()*20)+1
+    // }
+    let valueErase = myArray[myArray.length];
     $field.textContent = valueErase;
+    console.log(valueErase);
+    myArray.pop();
+    // $field.textContent = valueErase;
 
     // showMessage(value,myArray.length);
     $result.textContent=myArray;
